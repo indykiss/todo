@@ -1,0 +1,13 @@
+<h1>TodoItems#new</h1>
+<p>Find me in app/views/todo_items/new.html.erb</p>
+
+ 
+<%= form_tag todo_items_path do %>
+    <label>Todo Item title:</label><br>
+    <%= text_field_tag :title %><br>
+   
+    <label>Todo Item Description</label><br>
+    <%= text_area_tag :description %><br>
+   
+    <%= submit_tag "Submit Item" %>
+  <% end %>
